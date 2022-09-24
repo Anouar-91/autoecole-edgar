@@ -1,0 +1,45 @@
+{% extends 'front/layout.html.twig' %}
+
+{% block title %}
+Annulation
+        
+    
+{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% block banner %}
+    <div id="banner-area" class="banner-area" style="background-image:url({{ asset('build/images/banner_differents_permis.jpeg') }}); background-position: 30% 30%;">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">
+                  Les différents permis
+                </h1>
+              </div>
+            </div>
+          <!-- Col end -->
+          </div>
+        <!-- Row end -->
+        </div>
+      <!-- Container end -->
+      </div>
+    <!-- Banner text end -->
+    </div>
+  <!-- Banner area end -->
+
+    {% endblock %}
+<section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <img src="{{asset('build/images/differents-permis.png')}}" alt="différents permis" class="img-fluid">
+      </div>
+      <div class="row mt-2">
+        <img src="{{asset('build/images/differents-permis2.png')}}" alt="différents permis" class="img-fluid">
+      </div>
+    </div>
+  </section>
+            {% endblock %}
+            

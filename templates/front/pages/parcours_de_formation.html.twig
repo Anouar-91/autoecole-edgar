@@ -1,0 +1,66 @@
+{% extends 'front/layout.html.twig' %}
+
+{% block title %}
+    Parcours de formation
+    
+    
+    
+{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% block banner %}
+        <div id="banner-area" class="banner-area" style="background-image:url({{ asset('build/images/conduite.jpg') }}); background-position: 30% 30%;">
+            <div class="banner-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-heading">
+                                <h1 class="banner-title">
+								Parcours de formation
+
+                                    								
+                                </h1>
+                            </div>
+                        </div>
+                    <!-- Col end -->
+                    </div>
+                <!-- Row end -->
+                </div>
+            <!-- Container end -->
+            </div>
+        <!-- Banner text end -->
+        </div>
+    <!-- Banner area end -->
+
+    {% endblock %}
+    <section class="section-padding">
+		<div class="container"><strong>
+			<p>Vous allez apprendre à manipuler une automobile, à circuler dans différentes configurations et à connaître les risques et les limites. Cela demande de la motivation et de la persévérance.</p>
+			<p>Le parcours de formation proposé vous permettra de progresser, de connaître les règles du code de la route, de devenir un conducteur responsable et de vous préparer aux examens du permis de conduire.</p>
+			<p>En signant un contrat avec l’auto-école, vous vous engagez à suivre le programme de formation suivant :</p></strong>
+
+			<h3 class="mt-5">PARCOURS THEORIQUE</h3>
+			<p>La formation aux cours théoriques, portant sur différentes thématiques, se déroule collectivement, dans les locaux de l’école de conduite, et est dispensée en présence d’un enseignant de la conduite et de la sécurité routière titulaire d’une autorisation d’enseigner en cours de validité.</p>
+				<p>Les horaires des cours théoriques sont affichés dans l’établissement.</p>
+					<p>La formation théorique sur des questions d’entraînement au code pourra être suivie soit dans les locaux de l’école de conduite avec un support média tel que DVD, Box ou avec un enseignant, soit sur internet.</p>
+
+			<h3 class="mt-5">PARCOURS PRATIQUE</h3>
+			<p>La phase de pratique débutera pendant la phase théorique.</p>
+				<p>Pendant la phase pratique, vous serez amené à circuler :</p>
+					<ul>
+					<li>-	En ville ;</li>
+						<li>-	En rase campagne ;</li>
+							<li>-	Sur autoroute ;</li>
+								<li>-	La nuit (si le cas se présente).</li>
+					</ul>
+<br>
+				<strong><p>Vous serez amené à participer à un voyage école.</p></strong>
+					<p>Le voyage école permet d’acquérir de l’expérience au volant. Il permet par exemple d’apprendre à lire une carte, à utiliser un GPS, à favoriser l’autonomie et à apprendre en observant les autres candidats au permis de conduire.</p>
+						<br>
+						<strong><p>De l’écoute pédagogique vous sera proposée.</p></strong>
+							<p>Placé à l’arrière de la voiture, vous observez un élève qui conduit et vous écoutez les explications et les conseils de l’enseignant. Vous faites part de vos observations et de vos réflexions pendant cette écoute.</p>
+
+		</div>
+    </section>
+{% endblock %}

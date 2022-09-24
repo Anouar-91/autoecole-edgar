@@ -1,0 +1,101 @@
+{% extends 'front/layout.html.twig' %}
+
+{% block title %}
+    Formation 125
+        
+    
+{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% block banner %}
+    <div id="banner-area" class="banner-area" style="background-image:url({{ asset('build/images/formation-125.jpg') }}); background-position: 30% 30%;">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">
+                  Formation 125 CM3
+                </h1>
+              </div>
+            </div>
+          <!-- Col end -->
+          </div>
+        <!-- Row end -->
+        </div>
+      <!-- Container end -->
+      </div>
+    <!-- Banner text end -->
+    </div>
+  <!-- Banner area end -->
+
+    {% endblock %}
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Tarif</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3 class="text-uppercase">FORMULE 125 CM3</h3>
+              <h4>300€ TTC</h4>
+              <ul>
+                <li>1 Frais administratifs <br><small>(Toutes démarches nécessaires : création, modification, mise à jour de dossier, gestion interne, programmation, suivi, etc…)</small></li>
+                <li>1 attestation de suivi de formation</li>
+                <li>2 leçons de cours théoriques <br><small> (50 minutes de conduite effective – validité 1an) </small></li>
+                  <li>3 leçons de plateau  <br><small> (50 minutes de conduite effective – validité 1an) </small></li>
+                    <li>2 leçons de circulation <br><small>  (50 minutes de conduite effective – validité 1an)</small></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Pricing Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Pièces à fournir <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+            <p>1 photocopie de la pièce d’identité ou passeport ou carte de séjour en cours de validité</p>
+            <p>1 photo d’identités normes ANTS</p>
+            <p>1 l’original du permis de conduire</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Facilités de paiement <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <h3 class="mt-3">Payable en 1 mensualité</h3>
+                <p>250 € à l’inscription</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Equipements obligatoires <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>Casque</p>
+                <p>Blouson</p>
+                <p>Chaussures semi montantes</p>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+      </div>
+
+
+            {% endblock %}
+            

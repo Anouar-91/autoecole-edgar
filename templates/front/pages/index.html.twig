@@ -1,0 +1,194 @@
+{% extends 'front/layout.html.twig' %}
+
+{% block title %}
+    Accueil
+        
+    
+{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% block banner %}
+        <section id="hero">
+            <div class="hero-container">
+                <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active" style="background: url('{{ asset('build/images/slide1.jpg') }}');">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2 class="animate__animated animate__fadeInDown">
+                                        Bienvenue chez Auto-école Edgar
+                                    </h2>
+                                    <p class="animate__animated animate__fadeInUp">
+                                        La grande équipe de l'auto-école Edgar vous accueille dans une ambiance chaleureuse à Bobigny pour vous former au code de la route, aux différents permis auto, aux permis moto et deux roues. Profitez aussi de nos stages de code intensifs ! Grâce au code de la route  en ligne, retrouvez descours multimédia et des tests de  suivis par votre moniteur pour vous entraîner à l'examen. Auto-école Edgar Bobigny est un institut labellisé : vos formations en permis B (voiture) peuvent être financées par le CPF. 
+                                    </p>
+                                    <div>
+                                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">
+                                            En savoir plus
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!-- End Hero -->
+
+    {% endblock %}
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>
+                    Nos formations
+                </h2>
+                <p>
+                    Pour bien conduire, il faut avancer bien accompagné. Nous vous apportons un soutien adapté et bienveillant pendant tout votre parcours.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="{{path('permis-b')}}">
+                    <div class="box2">
+                        <img src="{{ asset('build/images/permis-b.jpg') }}" alt="permis b" class="img-fluid">
+                        <h4>
+                            Permis B
+                        </h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{{path('conduite-accompagnee')}}">
+                        <div class="box2">
+                            <img src="{{ asset('build/images/conduite-accompagne.jpg') }}" alt="conduite accompagnée" class="img-fluid">
+                            <h4>
+                                Conduite Accompagnée
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{{path('permis-accelere')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/permis-accelere.png') }}" alt="Permis accéléré" class="img-fluid">
+                        <h4>
+                            Permis accéléré
+                        </h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                <a href="{{path('conduite-supervisee')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/conduite-supervisee.jpeg') }}" alt="permis b" class="img-fluid">
+                        <h4>
+                            Conduite supervisée
+                        </h4>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-4">
+                <a href="{{path('perfectionnement')}}">
+                    <div class="box2">
+                        <img src="{{ asset('build/images/perfectionnement.jpg') }}" alt="conduite accompagnée" class="img-fluid">
+                        <h4>
+                            Perfectionnnement
+                        </h4>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-4">
+                <a href="{{path('permis-boite-auto')}}">
+                    <div class="box2">
+                        <img src="{{ asset('build/images/permis-boite-auto.jpg') }}" alt="Permis accéléré" class="img-fluid">
+                        <h4>
+                            Permis Boite Auto
+                        </h4>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                <a href="{{path('permis-am')}}">
+                    <div class="box2">
+                        <img src="{{ asset('build/images/permis-am.jpg') }}" alt="Permis AM" class="img-fluid">
+                        <h4>
+                            Permis AM
+                        </h4>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-4">
+                <a href="{{path('permis-a2')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/permis-A2.jpg') }}" alt="Permis A2" class="img-fluid">
+                        <h4>
+                            Permis A2
+                        </h4>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-4">
+                <a href="{{path('formation125')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/formation-125.jpg') }}" alt="Formation 125" class="img-fluid">
+                        <h4>
+                            Formation 125
+                        </h4>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                <a href="{{path('stages-intensifs')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/stage-intensif.jpg') }}" alt="Stages intensifs" class="img-fluid">
+                        <h4>
+                            Stages intensifs
+                        </h4>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-4">
+                <a href="{{path('annulation')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/annulation.jpg') }}" alt="Annulation" class="img-fluid">
+                        <h4>
+                            Annulation
+                        </h4>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-4">
+                <a href="{{path('stages-intensifs')}}">
+
+                    <div class="box2">
+                        <img src="{{ asset('build/images/code-de-la-route.jpg') }}" alt="Code de la route" class="img-fluid">
+                        <h4>
+                            Code de la route
+                        </h4>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- End Why Us Section -->
+
+            {% endblock %}
+            

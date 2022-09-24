@@ -1,0 +1,99 @@
+{% extends 'front/layout.html.twig' %}
+
+{% block title %}
+    Permis B
+        
+    
+{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% block banner %}
+    <div id="banner-area" class="banner-area" style="background-image:url({{ asset('build/images/perfectionnement.jpg') }}); background-position: 30% 30%;">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">
+                  Perfectionnement
+                </h1>
+              </div>
+            </div>
+          <!-- Col end -->
+          </div>
+        <!-- Row end -->
+        </div>
+      <!-- Container end -->
+      </div>
+    <!-- Banner text end -->
+    </div>
+  <!-- Banner area end -->
+
+    {% endblock %}
+    <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contactez-nous pour plus de renseignements.</p>
+      </div>
+
+      <div class="row contact-info">
+
+        <div class="col-md-4">
+          <div class="contact-address">
+            <i class="bi bi-geo-alt"></i>
+            <h3>Adresse</h3>
+            <address>{{company_address}}, {{company_zipcode}}, {{company_city}}</address>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-phone">
+            <i class="bi bi-phone"></i>
+            <h3>Téléphone</h3>
+            <p><a href="tel:{{company_call_phone1}}">{{company_phone1}}</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-email">
+            <i class="bi bi-envelope"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:info@example.com">{{company_email}}</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" data-rule="email" data-msg="Please enter a valid email">
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Envoyer Message</button></div>
+        </form>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+            {% endblock %}
+            

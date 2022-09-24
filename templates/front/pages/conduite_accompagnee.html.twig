@@ -1,0 +1,160 @@
+{% extends 'front/layout.html.twig' %}
+
+{% block title %}
+    Permis B
+        
+    
+{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% block banner %}
+    <div id="banner-area" class="banner-area" style="background-image:url({{ asset('build/images/conduite-accompagne.jpg') }}); background-position: 30% 30%;">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">
+                  Conduite accompagnée
+                </h1>
+              </div>
+            </div>
+          <!-- Col end -->
+          </div>
+        <!-- Row end -->
+        </div>
+      <!-- Container end -->
+      </div>
+    <!-- Banner text end -->
+    </div>
+  <!-- Banner area end -->
+
+    {% endblock %}
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Tarif</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3 class="text-uppercase">FORMULE Conduite accompagnée</h3>
+              <h4>1690€ TTC</h4>
+              <ul>
+                <li>1 Frais administratifs <br><small>(Toutes démarches nécessaires : création, modification, mise à jour de dossier, gestion interne, programmation, suivi, etc…)</small></li>
+                <li>1 Pochette pédagogique B <br><small>(fiche de suivi + livre de code + livret d’apprentissage)</small></li>
+                <li>1 Accès illimité à la salle de code <br><small>(validité 6 mois à partir de l’inscription – tests illimités)</small></li>
+                <li>20 Leçons de conduite <br><small>(validité 1 an à partir de l’inscription) </small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Pricing Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Prestations supplémentaires <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                <table class="table table-hover">
+                <tbody>
+                    <tr>
+                      <td>1 évaluation de départ (obligatoire)</td>
+                      <td>50€</td>
+                    </tr>
+                    <tr>
+                      <td>1 changement de catégorie AAC en B ou supervisée</td>
+                      <td>250€</td>
+                    </tr>
+                    <tr>
+                      <td>1 leçon de conduite</td>
+                      <td>52€</td>
+                    </tr>
+                    <tr>
+                      <td>1 frais d'accompagnement pratique	</td>
+                      <td>52€</td>
+                    </tr>
+                    <tr>
+                      <td>1 forfait 10 leçons</td>
+                      <td>500€</td>
+                    </tr>
+                    <tr>
+                      <td>1 prolongation 6 mois supplémentaires code</td>
+                      <td>250€</td>
+                    </tr>
+                    <tr>
+                      <td>1 examen code (LA POSTE ou SGS)</td>
+                      <td>30€</td>
+                    </tr>
+                    <tr>
+                      <td>1 livre de code</td>
+                      <td>25€</td>
+                    </tr>
+                    <tr>
+                      <td>1 livret vérification intérieur et extérieur</td>
+                      <td>25€</td>
+                    </tr>
+                    <tr>
+                      <td>1 Pack Web</td>
+                      <td>50€</td>
+                    </tr>
+                    <tr>
+                      <td>1 bilan de compétence</td>
+                      <td>100€</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <p>Les prix s’entendent TTC sous réserve du maintien des conditions réglementaires et tarifaires au moment de l’exécution des prestations.</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Pièces à fournir <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                    <p>5 photos d’identité (norme ANTS)</p>
+                    <p>2 enveloppes max suivi 50g et 100g</p>
+                    <p>3 timbres au tarif en vigueur</p>
+                    <p>1 photocopie de la pièce d’identité</p>
+                    <p>1 attestation de recensement si âgé(e) de moins de 18 ans</p>
+                    <p>1 photocopie de la JAPD si âgé(e) de 17ans à 25 ans</p>
+                    <p>1 justificatif de domicile de moins de 6 mois</p>
+                    <p>1 attestation d’hébergement + CNI hébergeur</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Facilités de paiement <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <h3 class="mt-3">Payable en 3 mensualités sans frais</h3>
+                <p>530 € à l’inscription</p>
+                <p>530 € le 2ème mois</p>
+                <p>530 € le 3ème mois</p>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+    <section class="section-padding">
+      <div class="container">
+        <img src="{{asset('build/images/Schema_AAC.png')}}" class="img-fluid" alt="AAC">
+      </div>
+    </section>
+
+            {% endblock %}
+            

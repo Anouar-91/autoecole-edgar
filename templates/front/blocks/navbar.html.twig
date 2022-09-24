@@ -1,0 +1,48 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      {# <h1 class="logo"><a href="index.html">Groovin</a></h1> #}
+      <!-- Uncomment below if you prefer to use an image logo -->
+     <a href="{{path('home')}}" class="logo"><img src="{{asset('build/images/logo.png')}}" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{{path('home')}}">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">Agence</a></li>
+          <li class="dropdown"><a href="#"><span>Informations</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{path('handicap-info')}}">Handicap Information</a></li>
+              <li><a href="{{path('les-differents-permis')}}">Les différents permis</a></li>
+              <li><a href="{{path('enjeux-formation')}}">Les enjeux de la formation</a></li>
+              <li><a href="{{path('nos-engagements')}}">Nos engagements</a></li>
+              <li><a href="{{path('reglement-interieur')}}">Réglement intérieur</a></li>
+              <li><a href="{{path('parcours-de-formation')}}">Parcours de formation</a></li>
+              <li><a href="{{path('programme-de-formation')}}">Programme de formation</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Formations</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{path('permis-b')}}">Permis B</a></li>
+              <li><a href="{{path('conduite-accompagnee')}}">Conduite accompagnée</a></li>
+              <li><a href="{{path('permis-accelere')}}">Permis accéléré</a></li>
+              <li><a href="{{path('conduite-supervisee')}}">Conduite supervisée</a></li>
+              <li><a href="{{path('perfectionnement')}}">Perfectionnnement</a></li>
+              <li><a href="{{path('permis-boite-auto')}}">Permis Boite Auto</a></li>
+
+              <li><a href="{{path('permis-am')}}">Permis AM</a></li>
+              <li><a href="{{path('permis-a2')}}">Permis A2</a></li>
+              <li><a href="{{path('formation125')}}">Formation 125</a></li>
+              <li><a href="{{path('stages-intensifs')}}">Stages intensifs</a></li>
+              <li><a href="{{path('annulation')}}">Annulation</a></li>
+              <li><a href="{{path('stages-intensifs')}}">Code de la route</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="#about">Contactez-nous</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle text-dark"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
